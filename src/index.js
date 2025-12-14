@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json()); // For json
 app.use(express.urlencoded({ extended: true })); // For form data
 // static file
-app.use(express.static(path.join(__dirname, '../assets'))); // Không cần Auth
+app.use(express.static(path.join(__dirname, 'assets'))); // Không cần Auth
 
 // Test
 app.get('/', (req, res) => {
